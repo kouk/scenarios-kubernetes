@@ -18,13 +18,13 @@ kubectl rollout status -f /root/podinfo.yaml
 Then create a service:
 
 ```plain
-kubectl expose -f podinfo.yml  --dry-run -o yaml
+kubectl expose -f /root/podinfo.yaml  --dry-run -o yaml
 ```{{exec}}
 
 Actually do it:
 
 ```plain
-kubectl expose -f podinfo.yml
+kubectl expose -f /root/podinfo.yaml
 ```{{exec}}
 
 
