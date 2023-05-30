@@ -14,7 +14,8 @@ spec:
   template:
     metadata:
       labels:
-c        nerd: "someone"
+        app: podinfo
+        nerd: "someone"
     spec:
       containers:
         - name: podinfo

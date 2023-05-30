@@ -8,7 +8,12 @@
     "steps": [
       {
         "title": "Run podinfo",
-        "text": "step1.md"
+        "text": "step1.md",
+        "verify": "step1.sh"
+      },
+      {
+        "title": "Deploy a curl pod",
+        "text": "step2.md"
       }
     ],
     "assets": {
@@ -18,6 +23,9 @@
     }
   },
   "backend": {
-    "imageid": "kubernetes-kubeadm-1node"
+    "imageid": "kubernetes-kubeadm-2nodes"
+  },
+  "interface": {
+      "layout": "ide"
   }
 }
