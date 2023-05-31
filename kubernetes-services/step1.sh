@@ -21,3 +21,6 @@ done
 echo "hitting svc with probe"
 ip=$(kubectl get svc -l nerd=someone -o go-template='{{ (index .items 0).spec.clusterIP }}')
 curl -fs $ip:9898
+
+echo "hitting host with probe"
+curl -fs 172.30.1.2:9898
